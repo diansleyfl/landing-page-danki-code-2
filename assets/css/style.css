@@ -103,7 +103,10 @@ header nav.mobile-menu {
 }
 
 header nav.mobile-menu:hover ul {
-    display: block;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
     opacity: 1;
     transition: 1s;
 }
@@ -111,16 +114,18 @@ header nav.mobile-menu:hover ul {
 header nav.mobile-menu ul {
     opacity: 0;
     position: absolute;
-    width: 100%;
-    left: 0;
+    width: 30%;
+    min-width: 150px;
+    right: 0;
     top: 75px;
     list-style-type: none;
-    background-color: #472562;
-    text-align: center;
+    text-align: left;
 }
 
 header nav.mobile-menu ul li {
-    border-bottom: 1px solid white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #472562;
     padding: 8px 0;
     transition: 0.4s;
 }
@@ -182,6 +187,7 @@ section.sessao1 {
 
 section.sessao1 .container {
     max-width: 1000px;
+    height: calc(100% + 30px);
 }
 
 .texto-sessao1 {
@@ -236,7 +242,7 @@ section.sessao1 .container {
 .device-sessao1 {
     float: left;
     width: 50%;
-    height: 450px;
+    height: 455px;
     position: relative;
     top: -55px;
     background-image: url('../img/device.png');
@@ -267,9 +273,120 @@ section.sessao2 p {
 }
 
 section.sessao2 img {
-    width: 100%;
-    margin-top: 40px;
+    width: 70%;
+    margin-top: 10px;
+    position: relative;
+    top: 100px;
 }
+
+section.sessao3 {
+    width: 100%;
+}
+
+section.sessao3 .parte1 {
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835FA7;
+}
+
+section.sessao3 .parte1 .wraper-parte1{
+    max-width: 600px;
+    float: right;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+
+section.sessao3 .parte1 h2 {
+    font-style: italic;
+    font-size: 23px;
+}
+
+section.sessao3 .parte1 p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 16px;
+}
+
+section.sessao3 .parte2 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: rgb(241, 241, 241);
+}
+
+section.sessao3 .parte2 .sobre-autor {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+section.sessao3 .parte2 .sobre-autor .titulo-autor {
+    float: left;
+    width: 100%;
+}
+
+section.sessao3 .parte2 .sobre-autor .titulo-autor .wraper-titulo-autor {
+    float: left;
+}
+
+section.sessao3 .parte2 .sobre-autor .titulo-autor h2 {
+    padding-right: 20px;
+    font-size: 25px;
+    color: #232323;
+}
+
+section.sessao3 .parte2 .sobre-autor .titulo-autor p {
+    font-size: 15px;
+    font-style: italic;
+    color: #232323;
+}
+
+section.sessao3 .parte2 .sobre-autor .titulo-autor .img-autor {
+    position: relative;
+    float: left;
+    top: -5px;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/perfil.jpg');
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.sessao3 .parte2 .sobre-autor .texto-autor {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.sessao3 .parte2 .sobre-autor .texto-autor p {
+    color: #232323;
+    font-size: 15px;
+}
+
+section.sessao3 .parte2 .slider-bullets {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+section.sessao3 .parte2 .slider-bullets span {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+section.sessao3 .parte2 .slider-bullets span:hover {
+    background-color: rgb(126, 126, 126);
+}
+
 
 /* 
 ----------------------------------------------------------
