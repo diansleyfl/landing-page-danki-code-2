@@ -288,7 +288,6 @@ section.sessao3 .parte1 {
     color: white;
     float: left;
     width: 50%;
-    min-height: 440px;
     padding: 140px 0 90px 0;
     background-color: #835FA7;
 }
@@ -313,7 +312,6 @@ section.sessao3 .parte1 p {
 section.sessao3 .parte2 {
     float: left;
     width: 50%;
-    min-height: 440px;
     padding: 140px 0 90px 0;
     background-color: rgb(241, 241, 241);
 }
@@ -389,6 +387,80 @@ section.sessao3 .parte2 .slider-bullets span:hover {
     background-color: rgb(126, 126, 126);
 }
 
+section.sessao4 {
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+section.sessao4 .form {
+    color: white;
+    float: left;
+    width: 50%;
+}
+
+section.sessao4 .form h2 {
+    font-size: 23px;
+}
+
+section.sessao4 .form p {
+    font-size: 15px;
+    max-width: 400px;
+}
+
+section.sessao4 .form form{
+    margin-top: 15px;
+}
+
+section.sessao4 .form input[type=text] {
+    width: 100%;
+    max-width: 480px;
+    height: 58px;
+    margin-top: 8px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+}
+
+section.sessao4 .form input[type=email] {
+    width: 100%;
+    max-width: 480px;
+    height: 58px;
+    margin-top: 8px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+}
+
+
+section.sessao4 .form textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 160px;
+    margin-top: 8px;
+    padding: 15px;
+    line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+}
+
+section.sessao4 .form input[type=submit] {
+    background-color: #ff703d;
+    color: white;
+    width: 165px;
+    height: 44px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius:30px;
+    font-size: 14px;
+    border: 0;
+}
+
+section.sessao4 .form input[type=submit]:hover {
+    background-color: #e95119;
+}
+
+
+
+
 
 /* 
 ----------------------------------------------------------
@@ -415,6 +487,10 @@ section.sessao3 .parte2 .slider-bullets span:hover {
 
 @media screen and (max-width: 900px) {
 
+    section.sessao3 .parte2 .sobre-autor {
+        align-items: center;
+    }
+    
     section.sessao3 .parte2 .sobre-autor .titulo-autor h2 {
         padding-right: 20px;
         font-size: 20px;
@@ -425,8 +501,9 @@ section.sessao3 .parte2 .slider-bullets span:hover {
     }
 
     section.sessao3 .parte2 .sobre-autor .titulo-autor .img-autor {
-        position: relative;
-        top: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     section.sessao3 .parte2 .sobre-autor .texto-autor {
@@ -520,6 +597,10 @@ section.sessao3 .parte2 .slider-bullets span:hover {
         padding-top: 40px;
     }
 
+    section.sessao3 .parte2 .sobre-autor .titulo-autor .img-autor {
+        margin-top: 5px;
+    }
+
 }
 
 
@@ -527,19 +608,17 @@ section.sessao3 .parte2 .slider-bullets span:hover {
 
     section.sessao2 img {
         top: 30px;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     
     section.sessao3 .parte1 {
         width: 100%;
         padding: 40px 0;
-        min-height: 0;
     }
     
     section.sessao3 .parte2 {
         width: 100%;
         padding: 40px 0;
-        min-height: 0;
     }
 
 }
