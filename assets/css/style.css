@@ -281,12 +281,14 @@ section.sessao2 img {
 
 section.sessao3 {
     width: 100%;
+    height: auto;
 }
 
 section.sessao3 .parte1 {
     color: white;
     float: left;
     width: 50%;
+    min-height: 440px;
     padding: 140px 0 90px 0;
     background-color: #835FA7;
 }
@@ -294,8 +296,7 @@ section.sessao3 .parte1 {
 section.sessao3 .parte1 .wraper-parte1{
     max-width: 600px;
     float: right;
-    padding-right: 30px;
-    margin-left: 20px;
+    padding: 0 30px;
 }
 
 section.sessao3 .parte1 h2 {
@@ -312,6 +313,7 @@ section.sessao3 .parte1 p {
 section.sessao3 .parte2 {
     float: left;
     width: 50%;
+    min-height: 440px;
     padding: 140px 0 90px 0;
     background-color: rgb(241, 241, 241);
 }
@@ -411,6 +413,33 @@ section.sessao3 .parte2 .slider-bullets span:hover {
 */
 
 
+@media screen and (max-width: 900px) {
+
+    section.sessao3 .parte2 .sobre-autor .titulo-autor h2 {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    
+    section.sessao3 .parte2 .sobre-autor .titulo-autor p {
+        font-size: 14px;
+    }
+
+    section.sessao3 .parte2 .sobre-autor .titulo-autor .img-autor {
+        position: relative;
+        top: 5px;
+    }
+    
+    section.sessao3 .parte2 .sobre-autor .texto-autor {
+        margin-top: 10px;
+    }
+    
+    section.sessao3 .parte2 .sobre-autor .texto-autor p {
+        font-size: 14px;
+    }
+
+}
+
+
 @media screen and (max-width: 840px) {
 
     .chamada1 {
@@ -489,6 +518,28 @@ section.sessao3 .parte2 .slider-bullets span:hover {
 
     section.sessao2 {
         padding-top: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 580px) {
+
+    section.sessao2 img {
+        top: 30px;
+        margin-top: 30px;
+    }
+    
+    section.sessao3 .parte1 {
+        width: 100%;
+        padding: 40px 0;
+        min-height: 0;
+    }
+    
+    section.sessao3 .parte2 {
+        width: 100%;
+        padding: 40px 0;
+        min-height: 0;
     }
 
 }
