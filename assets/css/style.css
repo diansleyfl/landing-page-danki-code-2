@@ -83,10 +83,13 @@ header {
 }
 
 header .logo {
+    float: left;
     width: 160px;
     height: 40px;
-    background-color: #ccc;
-    float: left;
+    background-image: url('../img/logo-danki.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header nav {
@@ -508,6 +511,21 @@ section.sessao4 .form input[type=submit]:hover {
 ---------------------------------------------------------- 
 */
 
+footer {
+    padding: 40px 4%;
+    background-color: #192123;
+    color: white;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+    font-size: 14px;
+}
 
 
 /* 
@@ -708,6 +726,19 @@ section.sessao4 .form input[type=submit]:hover {
 
     section.sessao3 .parte2 .sobre-autor .titulo-autor .img-autor {
         margin-top: 0px;
+    }
+
+    footer {
+    text-align: center;
+    }
+    
+    footer p:nth-of-type(1) {
+        float: none;
+    }
+    
+    footer p:nth-of-type(2) {
+        float: none;
+        margin-top: 8px;
     }
 
 }
